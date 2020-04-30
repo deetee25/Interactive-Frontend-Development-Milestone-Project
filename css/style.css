@@ -11,3 +11,8 @@ body {
     background-color: #262626;
     color: #fff;
 }
+
+.container {
+  width: 31.25em;
+  margin: 1.25em auto;
+}
