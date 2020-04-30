@@ -16,3 +16,9 @@ body {
   width: 31.25em;
   margin: 1.25em auto;
 }
+
+.header {
+    background-color: #708090;
+    text-align: center;
+    padding: 1.75rem;
+}
