@@ -30,3 +30,10 @@ body {
 .header h1 {
     font-size: 2.25rem;
 }
+
+.date {
+    background-color: #2f4f4f;
+    text-align: right;
+    font-size: 0.75rem;
+    padding: 0.75rem 2rem 0.75rem 0;
+}
