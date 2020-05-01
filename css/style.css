@@ -43,3 +43,17 @@ ul.currencies {
   background-color: #2f4f4f;
   padding: 0 1.5rem 1rem 1.5rem;
 }
+
+.currency-btn {
+  background-color: #3cb371;
+  color: #fff;
+  padding: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-top: 3px solid #3cb371;
+  outline: none;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.25s;
+}
