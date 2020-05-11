@@ -69,10 +69,25 @@ ul.currencies li.base-currency {
 
 .info {
     display: inline-block;
+    width: 76%;
 }
 
 .info .input span {
     font-size: 1.5rem;
+    display: inline-block;
+    width: 4rem;
+    text-align: center;
+}
+
+.info .input input {
+    font-size: 1.5rem;
+    width: 76%;
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    padding: 0.3rem;
+    margin-bottom: 0.75rem;
 }
 
 .currency-btn {
