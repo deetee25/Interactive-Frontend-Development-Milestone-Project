@@ -60,6 +60,21 @@ ul.currencies li.base-currency {
     background-color: #0B2F3A;
 }
 
+.country-flag {
+    width: 60px;
+    height: 40px;
+    border: 1px solid #fff;
+    vertical-align: top;
+}
+
+.info {
+    display: inline-block;
+}
+
+.info .input span {
+    font-size: 1.5rem;
+}
+
 .currency-btn {
   background-color: #3cb371;
   color: #fff;
