@@ -108,6 +108,8 @@ ul.currencies li .close-btn {
     top: 0;
     right: 0;
     padding: 0 0.5rem;
+    font-size: 1.5rem;
+    color: #fff;
 }
 
 .currency-btn {
