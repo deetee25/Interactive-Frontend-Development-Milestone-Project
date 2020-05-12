@@ -50,6 +50,7 @@ ul.currencies li {
     list-style: none;
     padding: 1rem 1rem 0.75rem 1rem;
     margin-bottom: 1rem;
+    position: relative;
 }
 
 ul.currencies li:last-child {
@@ -88,6 +89,25 @@ ul.currencies li.base-currency {
     color: #fff;
     padding: 0.3rem;
     margin-bottom: 0.75rem;
+}
+
+.info .currency-name {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    margin-left: 4rem;
+}
+
+.info .base-currency-rate {
+    font-size: 0.8rem;
+    margin-left: 4rem;
+}
+
+ul.currencies li .close-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 0.5rem;
 }
 
 .currency-btn {
