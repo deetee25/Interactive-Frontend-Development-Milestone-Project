@@ -125,6 +125,7 @@ ul.add-currency-list {
     width: 100%;
     height: calc(100vh - 40px - 100px - 55px);
     overflow-y: auto;
+    display: none;
 }
 
 ul.add-currency-list li {
@@ -161,4 +162,12 @@ ul.add-currency-list li span {
   width: 100%;
   cursor: pointer;
   transition: background-color 0.25s;
+}
+
+.currency-btn:hover {
+    background-color: #d9534f;
+}
+
+.currency-btn:hover + ul.add-currency-list {
+    display: block;
 }
