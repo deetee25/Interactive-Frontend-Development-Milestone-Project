@@ -133,6 +133,11 @@ ul.add-currency-list li {
     border-bottom: 1px solid #ddd;
 }
 
+ul.add-currency-list li.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
 ul.add-currency-list li .flag {
     width: 3rem;
     height: 2rem;
