@@ -19,6 +19,7 @@ body {
 .container {
   width: 31.25em;
   margin: 1.25em auto;
+  position: relative;
 }
 
 .header {
@@ -113,6 +114,17 @@ ul.currencies li .close-btn {
     font-size: 1.5rem;
     color: #fff;
     cursor: pointer;
+}
+
+ul.add-currency-list {
+    position: absolute;
+    bottom: 54px;
+    left: 0;
+    background-color: #f1f1f1;
+    color: #333;
+    width: 100%;
+    height: calc(100vh - 40px - 100px - 55px);
+    overflow-y: auto;
 }
 
 .currency-btn {
