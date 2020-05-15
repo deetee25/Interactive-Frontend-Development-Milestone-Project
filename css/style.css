@@ -127,6 +127,23 @@ ul.add-currency-list {
     overflow-y: auto;
 }
 
+ul.add-currency-list li {
+    list-style: none;
+    padding: 0.75rem;
+    border-bottom: 1px solid #ddd;
+}
+
+ul.add-currency-list li .flag {
+    width: 3rem;
+    height: 2rem;
+    vertical-align: middle;
+}
+
+ul.add-currency-list li span {
+    margin-left: 1rem;
+    font-weight: bold;
+}
+
 .currency-btn {
   background-color: #3cb371;
   color: #fff;
