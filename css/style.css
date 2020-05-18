@@ -117,10 +117,17 @@ ul.currencies li .close-btn {
     cursor: pointer;
 }
 
+/* Scrollbar */
+
+ul.currencies::-webkit-scrollbar-thumb {
+    background-color: #2d2d37;
+    border-bottom: 1rem soild #222;
+}
+
 ul.add-currency-list {
     position: absolute;
     bottom: 54px;
-    left: 150%;
+    left: 105%;
     background-color: #f1f1f1;
     color: #333;
     width: 100%;
