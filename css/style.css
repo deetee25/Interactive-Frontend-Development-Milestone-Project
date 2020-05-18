@@ -170,10 +170,24 @@ ul.add-currency-list li span {
   width: 100%;
   cursor: pointer;
   transition: background-color 0.25s;
+  position: relative;
+}
+
+.currency-btn i {
+    position: absolute;
+    top: 0.6rem;
+    left: 1.25rem;
+    font-size: 2rem;
+    opacity: 0;
+    transition: all 0.20s;
 }
 
 .currency-btn:hover {
     background-color: #d9534f;
+}
+
+.currency-btn:hover i {
+    opacity: 1;
 }
 
 .currency-btn:hover + ul.add-currency-list {
