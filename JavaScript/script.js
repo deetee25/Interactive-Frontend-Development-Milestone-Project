@@ -1,6 +1,7 @@
 // Global Variables 
 
 const currencyBtn = document.querySelector(".currency-btn");
+const addCurrencyList = document.querySelector(".add-currency-list");
 
 let currencies = [
   {
@@ -210,3 +211,12 @@ currencyBtn.addEventListener("click", currencyBtnClick);
 function currencyBtnClick(event) {
     currencyBtn.classList.toggle("open");
 }
+
+function populateAddCurrencyList() {
+    for(let i=0; i<currencies.length; i++) {
+        addCurrencyList.insertAdjacentHTML("beforeend", `            <li data-currency="NZD"><img src="images/nz.gif" alt="Flag of New Zealand" class="country-flag"><span>NZD - New Zealand Dollar</span></li>
+`);
+    }
+}
+
+populateAddCurrencyList();
