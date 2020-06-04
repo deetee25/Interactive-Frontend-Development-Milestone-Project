@@ -260,7 +260,13 @@ function populationCurrenciesList() {
 }
 
 function newCurrenciesListItem(currency) {
-
+    if(currenciesList.childElementCount==0) {
+        baseCurrency = currency.abbreviation;
+        baseCurrencyAmount = 0;
+    }
+    addCurrencyList.querySelector(`[data-currency=${currency.abbreviation}]`).classList.add("disabled");
+    const baseCurrencyRate = currencies.find(c => c.abbreviation===baseCurrency).rate;
+    const exchangeRate = currency.abbreviation===baseCurrency ? 1 : (currency.rate/baseCurrencyRate).toFixed(4);
 }
 
 populateAddCurrencyList();
