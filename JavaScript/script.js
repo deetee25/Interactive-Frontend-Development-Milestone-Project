@@ -13,169 +13,197 @@ let currencies = [
     name: "US Dollar",
     abbreviation: "USD",
     symbol: "\u0024",
-    flagURL: "http://www.geonames.org/flags/l/us.gif"
+    flagURL: "http://www.geonames.org/flags/l/us.gif",
+    rate: 1.2335
   },
   {
     name: "Euro",
     abbreviation: "EUR",
     symbol: "\u20AC",
-    flagURL: "https://upload.wikimedia.org/wikipedia/commons/b/b7/Flag_of_Europe.svg"
+    flagURL: "https://upload.wikimedia.org/wikipedia/commons/b/b7/Flag_of_Europe.svg",
+    rate: 1
   },
   {
     name: "Japanese Yen",
     abbreviation: "JPY",
     symbol: "\u00A5",
-    flagURL: "http://www.geonames.org/flags/l/jp.gif"
+    flagURL: "http://www.geonames.org/flags/l/jp.gif",
+    rate: 1.2335
   },
   {
     name: "British Pound",
     abbreviation: "GBP",
     symbol: "\u00A3",
-    flagURL: "http://www.geonames.org/flags/l/uk.gif"
+    flagURL: "http://www.geonames.org/flags/l/uk.gif",
+    rate: 1.2335
   },
   {
     name: "Australian Dollar",
     abbreviation: "AUD",
     symbol: "\u0024",
-    flagURL: "http://www.geonames.org/flags/l/au.gif"
+    flagURL: "http://www.geonames.org/flags/l/au.gif",
+    rate: 1.2335
   },
   {
     name: "Canadian Dollar",
     abbreviation: "CAD",
     symbol: "\u0024",
-    flagURL: "http://www.geonames.org/flags/l/ca.gif"
+    flagURL: "http://www.geonames.org/flags/l/ca.gif",
+    rate: 1.2335
   },
   {
     name: "Swiss Franc",
     abbreviation: "CHF",
     symbol: "\u0043\u0048\u0046",
-    flagURL: "http://www.geonames.org/flags/l/ch.gif"
+    flagURL: "http://www.geonames.org/flags/l/ch.gif",
+    rate: 1.2335
   },
   {
     name: "Chinese Yuan Renminbi",
     abbreviation: "CNY",
     symbol: "\u00A5",
-    flagURL: "http://www.geonames.org/flags/l/cn.gif"
+    flagURL: "http://www.geonames.org/flags/l/cn.gif",
+    rate: 1.2335
   },
   {
     name: "Swedish Krona",
     abbreviation: "SEK",
     symbol: "\u006B\u0072",
-    flagURL: "http://www.geonames.org/flags/l/se.gif"
+    flagURL: "http://www.geonames.org/flags/l/se.gif",
+    rate: 1.2335
   },
   {
     name: "New Zealand Dollar",
     abbreviation: "NZD",
     symbol: "\u0024",
-    flagURL: "http://www.geonames.org/flags/l/nz.gif"
+    flagURL: "http://www.geonames.org/flags/l/nz.gif",
+    rate: 1.2335
   },
   {
     name: "Mexican Peso",
     abbreviation: "MXN",
     symbol: "\u0024",
-    flagURL: "http://www.geonames.org/flags/l/mx.gif"
+    flagURL: "http://www.geonames.org/flags/l/mx.gif",
+    rate: 1.2335
   },
   {
     name: "Singapore Dollar",
     abbreviation: "SGD",
     symbol: "\u0024",
-    flagURL: "http://www.geonames.org/flags/l/sg.gif"
+    flagURL: "http://www.geonames.org/flags/l/sg.gif",
+    rate: 1.2335
   },
   {
     name: "Hong Kong Dollar",
     abbreviation: "HKD",
     symbol: "\u0024",
-    flagURL: "http://www.geonames.org/flags/l/hk.gif"
+    flagURL: "http://www.geonames.org/flags/l/hk.gif",
+    rate: 1.2335
   },
   {
     name: "Norwegian Krone",
     abbreviation: "NOK",
     symbol: "\u006B\u0072",
-    flagURL: "http://www.geonames.org/flags/l/no.gif"
+    flagURL: "http://www.geonames.org/flags/l/no.gif",
+    rate: 1.2335
   },
   {
     name: "South Korean Won",
     abbreviation: "KRW",
     symbol: "\u20A9",
-    flagURL: "http://www.geonames.org/flags/l/kr.gif"
+    flagURL: "http://www.geonames.org/flags/l/kr.gif",
+    rate: 1.2335
   },
   {
     name: "Turkish Lira",
     abbreviation: "TRY",
     symbol: "\u20BA",
-    flagURL: "http://www.geonames.org/flags/l/tr.gif"
+    flagURL: "http://www.geonames.org/flags/l/tr.gif",
+    rate: 1.2335
   },
   {
     name: "Russian Ruble",
     abbreviation: "RUB",
     symbol: "\u20BD",
-    flagURL: "http://www.geonames.org/flags/l/ru.gif"
+    flagURL: "http://www.geonames.org/flags/l/ru.gif",
+    rate: 1.2335
   },
   {
     name: "Indian Rupee",
     abbreviation: "INR",
     symbol: "\u20B9",
-    flagURL: "http://www.geonames.org/flags/l/in.gif"
+    flagURL: "http://www.geonames.org/flags/l/in.gif",
+    rate: 1.2335
   },
   {
     name: "Brazilian Real",
     abbreviation: "BRL",
     symbol: "\u0052\u0024",
-    flagURL: "http://www.geonames.org/flags/l/br.gif"
+    flagURL: "http://www.geonames.org/flags/l/br.gif",
+    rate: 1.2335
   },
   {
     name: "South African Rand",
     abbreviation: "ZAR",
     symbol: "\u0052",
-    flagURL: "http://www.geonames.org/flags/l/za.gif"
+    flagURL: "http://www.geonames.org/flags/l/za.gif",
+    rate: 1.2335
   },
   {
     name: "Philippine Peso",
     abbreviation: "PHP",
     symbol: "\u20B1",
-    flagURL: "http://www.geonames.org/flags/l/ph.gif"
+    flagURL: "http://www.geonames.org/flags/l/ph.gif",
+    rate: 1.2335
   },
   {
     name: "Czech Koruna",
     abbreviation: "CZK",
     symbol: "\u004B\u010D",
-    flagURL: "http://www.geonames.org/flags/l/cz.gif"
+    flagURL: "http://www.geonames.org/flags/l/cz.gif",
+    rate: 1.2335
   },
   {
     name: "Indonesian Rupiah",
     abbreviation: "IDR",
     symbol: "\u0052\u0070",
-    flagURL: "http://www.geonames.org/flags/l/id.gif"
+    flagURL: "http://www.geonames.org/flags/l/id.gif",
+    rate: 1.2335
   },
   {
     name: "Malaysian Ringgit",
     abbreviation: "MYR",
     symbol: "\u0052\u004D",
-    flagURL: "http://www.geonames.org/flags/l/my.gif"
+    flagURL: "http://www.geonames.org/flags/l/my.gif",
+    rate: 1.2335
   },
   {
     name: "Hungarian Forint",
     abbreviation: "HUF",
     symbol: "\u0046\u0074",
-    flagURL: "http://www.geonames.org/flags/l/hu.gif"
+    flagURL: "http://www.geonames.org/flags/l/hu.gif",
+    rate: 1.2335
   },
   {
     name: "Icelandic Krona",
     abbreviation: "ISK",
     symbol: "\u006B\u0072",
-    flagURL: "http://www.geonames.org/flags/l/is.gif"
+    flagURL: "http://www.geonames.org/flags/l/is.gif",
+    rate: 1.2335
   },
   {
     name: "Croatian Kuna",
     abbreviation: "HRK",
     symbol: "\u006B\u006E",
-    flagURL: "http://www.geonames.org/flags/l/hr.gif"
+    flagURL: "http://www.geonames.org/flags/l/hr.gif",
+    rate: 1.2335
   },
   {
     name: "Bulgarian Lev",
     abbreviation: "BGN",
     symbol: "\u043B\u0432",
-    flagURL: "http://www.geonames.org/flags/l/bg.gif"
+    flagURL: "http://www.geonames.org/flags/l/bg.gif",
+    rate: 1.2335
   },
   {
     name: "Romanian Leu",
