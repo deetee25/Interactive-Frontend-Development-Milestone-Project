@@ -2,6 +2,11 @@
 
 const currencyBtn = document.querySelector(".currency-btn");
 const addCurrencyList = document.querySelector(".add-currency-list");
+const currenciesList = document.querySelector(".currencies");
+
+const initiallDisplayedCurrencies = ["USD", "EUR", "GBP", "JPY", "RUB"];
+let baseCurrency;
+let baseCurrencyAmount;
 
 let currencies = [
   {
@@ -214,9 +219,20 @@ function currencyBtnClick(event) {
 
 function populateAddCurrencyList() {
     for(let i=0; i<currencies.length; i++) {
-        addCurrencyList.insertAdjacentHTML("beforeend", `            <li data-currency="NZD"><img src="images/nz.gif" alt="Flag of New Zealand" class="country-flag"><span>NZD - New Zealand Dollar</span></li>
+        addCurrencyList.insertAdjacentHTML("beforeend", `            <li data-currency=${currencies[i].abbreviation}><img src=${currencies[i].flagURL} alt="Flag of New Zealand" class="country-flag"><span>${currencies[i].abbreviation} - ${currencies[i].name}</span></li>
 `);
     }
+}
+
+function populationCurrenciesList() {
+    for(let i=0; i<initiallDisplayedCurrencies.length; i++) {
+        const currency = currencies.find(c => c.abbreviation===initiallDisplayedCurrencies[i]);
+        if(currency) newCurrenciesListItem(currency);
+    }
+}
+
+function newCurrenciesListItem(currency) {
+
 }
 
 populateAddCurrencyList();
