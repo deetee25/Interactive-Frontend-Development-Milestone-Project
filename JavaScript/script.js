@@ -267,6 +267,7 @@ function newCurrenciesListItem(currency) {
     addCurrencyList.querySelector(`[data-currency=${currency.abbreviation}]`).classList.add("disabled");
     const baseCurrencyRate = currencies.find(c => c.abbreviation===baseCurrency).rate;
     const exchangeRate = currency.abbreviation===baseCurrency ? 1 : (currency.rate/baseCurrencyRate).toFixed(4);
+    const inputValue = baseCurrencyAmount ? (baseCurrencyAmount*exchangeRate).toFixed(4) : "";
 
     currenciesList.insertAdjacentHTML(
     "beforeend",
