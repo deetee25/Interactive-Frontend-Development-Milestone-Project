@@ -275,8 +275,8 @@ function newCurrenciesListItem(currency) {
                 <img src=${currency.flagURL} class="country-flag">
                 <div class="info">
                     <p class="input"><span class="currency-type">${currency.type}</span><input placeholder="0.0000" value${inputValue}></p>
-                    <p class="currency-name">JPY - Japanese Yen</p>
-                    <p class="base-currency-rate">1 USD = 122.00 JPY</p>
+                    <p class="currency-name">${currency.abbreviation} - ${currency.name}</p>
+                    <p class="base-currency-rate">${baseCurrency} = ${exchangeRate} ${currency.abbreviation}</p>
                 </div>
                 <span class="close-btn">&times;</span>
             </li>`
@@ -286,3 +286,5 @@ function newCurrenciesListItem(currency) {
 
 
 populateAddCurrencyList();
+
+populationCurrenciesList();
