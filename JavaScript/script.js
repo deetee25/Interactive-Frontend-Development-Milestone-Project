@@ -283,6 +283,15 @@ function setNewBaseCurrency(newBaseCurrencyLI) {
   });
 }
 
+currenciesList.addEventListener("input", currenciesListInputChange);
+
+function currenciesListInputChange(event) {
+  const isNewBaseCurrency = event.target.closest("li").id!==baseCurrency;
+  if(isNewBaseCurrency) {
+    currenciesList.querySelector(`#${baseCurrency}`).classList.remove("base-currency");
+    setNewBaseCurrency(event.target.closest("li"));
+  }
+
 function populateAddCurrencyList() {
     for(let i=0; i<currencies.length; i++) {
         addCurrencyList.insertAdjacentHTML("beforeend", `<li data-currency=${currencies[i].abbreviation}><img src=${currencies[i].flagURL} alt="Flag of New Zealand" class="country-flag"><span>${currencies[i].abbreviation} - ${currencies[i].name}</span></li>
