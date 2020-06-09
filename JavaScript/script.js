@@ -255,9 +255,26 @@ function addCurrencyListClick(event) {
   }
 }
 
+currenciesList.addEventListener("click", currenciesListClick);
+
+function currenciesListClick(event) {
+  if(event.target.classList.contains("close-btn")) {
+    const parentNode = event.target.parentNode;
+    parentNode.remove();
+    addCurrencyList.querySelector(`[data-currency=${parentNode.id}]`).classList.remove("disabled");
+    if(parentNode.classList.contains("base-currency")) {
+      const newBaseCurrencyLI = currenciesList.querySelector(".currency");
+      if(newBaseCurrencyLI) {
+        setNewBaseCurrency(newBaseCurrencyLI);
+        baseCurrencyAmount = Number(newBaseCurrencyLI.querySelector(".input input").value);
+      }
+    }
+  }
+}
+
 function populateAddCurrencyList() {
     for(let i=0; i<currencies.length; i++) {
-        addCurrencyList.insertAdjacentHTML("beforeend", `            <li data-currency=${currencies[i].abbreviation}><img src=${currencies[i].flagURL} alt="Flag of New Zealand" class="country-flag"><span>${currencies[i].abbreviation} - ${currencies[i].name}</span></li>
+        addCurrencyList.insertAdjacentHTML("beforeend", `<li data-currency=${currencies[i].abbreviation}><img src=${currencies[i].flagURL} alt="Flag of New Zealand" class="country-flag"><span>${currencies[i].abbreviation} - ${currencies[i].name}</span></li>
 `);
     }
 }
