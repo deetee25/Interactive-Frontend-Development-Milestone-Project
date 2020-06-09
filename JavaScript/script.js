@@ -268,7 +268,12 @@ function currenciesListClick(event) {
         setNewBaseCurrency(newBaseCurrencyLI);
         baseCurrencyAmount = Number(newBaseCurrencyLI.querySelector(".input input").value);
       }
+
+      const newBaseCurrencyAmount = isNaN(event.target.value) ? 0 : Number(event.target.value);
+    if(baseCurrencyAmount!==newBaseCurrencyAmount || isNewBaseCurrency) {
+        baseCurrencyAmount = newBaseCurrencyAmount;
     }
+
   }
 }
 
