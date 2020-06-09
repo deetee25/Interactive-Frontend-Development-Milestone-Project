@@ -245,6 +245,16 @@ function currencyBtnClick(event) {
     currencyBtn.classList.toggle("open");
 }
 
+addCurrencyList.addEventListener("click", addCurrencyListClick);
+
+function addCurrencyListClick(event) {
+  const clickedListItem = event.target.closest("li");
+  if(!clickedListItem.classList.contains("disabled")) {
+    const newCurrency = currencies.find(c => c.abbreviation===clickedListItem.getAttribute("data-currency"));
+    if(newCurrency) newCurrenciesListItem(newCurrency);
+  }
+}
+
 function populateAddCurrencyList() {
     for(let i=0; i<currencies.length; i++) {
         addCurrencyList.insertAdjacentHTML("beforeend", `            <li data-currency=${currencies[i].abbreviation}><img src=${currencies[i].flagURL} alt="Flag of New Zealand" class="country-flag"><span>${currencies[i].abbreviation} - ${currencies[i].name}</span></li>
