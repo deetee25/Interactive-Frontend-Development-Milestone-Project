@@ -10,84 +10,14 @@
 </head>
 <body>
     <div class="container">
-        <div class="header">
-            <h1>Currency Converter</h1>
-        </div>
-        <div class="date">29-04-2020</div>
-        <ul class="currencies">
-            <li class="currency base-currency" id="USD">
-                <img src="images/us.gif" alt="Flag of the USA" class="country-flag">
-                <div class="info">
-                    <p class="input"><span class="currency-type">&#36;</span><input placeholder="0.0000"></p>
-                    <p class="currency-name">USD - US Dollar</p>
-                    <p class="base-currency-rate">1 USD = 1 USD</p>
-                </div>
-                <span class="close-btn">&times;</span>
-            </li>
-            <li class="currency" id="EUR">
-                <img src="images/Flag_of_Europe.svg" alt="Flag of Europe" class="country-flag">
-                <div class="info">
-                    <p class="input"><span class="currency-type">&#8364;</span><input placeholder="0.0000"></p>
-                    <p class="currency-name">EUR - Euro</p>
-                    <p class="base-currency-rate">1 USD = 0.8990 EUR</p>
-                </div>
-                <span class="close-btn">&times;</span>
-            </li>
-            <li class="currency" id="GBP">
-                <img src="images/uk.gif" alt="Flag of Great Britain" class="country-flag">
-                <div class="info">
-                    <p class="input"><span class="currency-type">&#65505;</span><input placeholder="0.0000"></p>
-                    <p class="currency-name">GBP - British Pound</p>
-                    <p class="base-currency-rate">1 USD = 0.8084 GBP</p>
-                </div>
-                <span class="close-btn">&times;</span>
-            </li>
-            <li class="currency" id="JPY">
-                <img src="images/jp.gif" alt="Flag of Japan" class="country-flag">
-                <div class="info">
-                    <p class="input"><span class="currency-type">&#165;</span><input placeholder="0.0000"></p>
-                    <p class="currency-name">JPY - Japanese Yen</p>
-                    <p class="base-currency-rate">1 USD = 122.00 JPY</p>
-                </div>
-                <span class="close-btn">&times;</span>
-            </li>
-            <li class="currency" id="RUB">
-                <img src="images/ru.gif" alt="Flag of Russia" class="country-flag">
-                <div class="info">
-                    <p class="input"><span class="currency-type">&#8381;</span><input placeholder="0.0000"></p>
-                    <p class="currency-name">RUB - Russian Ruble</p>
-                    <p class="base-currency-rate">1 USD = 72.2111 RUB</p>
-                </div>
-                <span class="close-btn">&times;</span>
-            </li>
-            <li class="currency" id="CNY">
-                <img src="images/cn.gif" alt="Flag of China" class="country-flag">
-                <div class="info">
-                    <p class="input"><span class="currency-type">&#165;</span><input placeholder="0.0000"></p>
-                    <p class="currency-name">CNY - Chinese Yuan Renminbi</p>
-                    <p class="base-currency-rate">1 USD = 7.7756 YEN</p>
-                </div>
-                <span class="close-btn">&times;</span>
-            </li>
-            <li class="currency" id="INR">
-                <img src="images/in.gif" alt="Flag of India" class="country-flag">
-                <div class="info">
-                    <p class="input"><span class="currency-type">&#8377;</span><input placeholder="0.0000"></p>
-                    <p class="currency-name">INR - Indian Rupee</p>
-                    <p class="base-currency-rate">1 USD = 75.34 INR</p>
-                </div>
-                <span class="close-btn">&times;</span>
-            </li>
-        </ul>
-        <button class="currency-btn "><i class="fas fa-long-arrow-alt-left"></i>Add Currency</button>
-        <ul class="add-currency-list">
-        <!-- <li data-currency="USD" class="disabled"><img src="images/us.gif" alt="Flag of the USA" class="country-flag"><span>USD - US Dollar</span></li>
-            <li data-currency="NZD"><img src="images/nz.gif" alt="Flag of New Zealand" class="country-flag"><span>NZD - New Zealand Dollar</span></li>
-            <li data-currency="CAD"><img src="images/ca.gif" alt="Flag of Canada" class="country-flag"><span>CAD - Canadian Dollar</span></li>
-            <li data-currency="MXN"><img src="images/mx.gif" alt="Flag of Mexico" class="country-flag"><span>MXN - Mexican Peso</span></li>-->
-        </ul>
-        
+    <div class="header">
+      <h1>Currency Converter</h1>
     </div>
+    <div class="date"></div>
+    <ul class="currencies"></ul>
+    <button class="add-currency-btn"><i class="fas fa-long-arrow-alt-left"></i>Add Currency</button>
+    <ul class="add-currency-list"></ul>
+  </div>
     <script src="JavaScript/script.js"></script>
 </body>
 </html>
